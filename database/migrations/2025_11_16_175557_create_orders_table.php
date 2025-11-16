@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->foreignId('cart_id')->constrained()->onDelete('cascade');
+            $table->enum('status',['pending','preparing','delivering','completed','cancelled'])->default('pending');
+            $table->decimal('total',10,2);
+            $table->enum('payment_method', ['cash', 'credit_card', 'debit_card', 'transfer']);
             $table->timestamps();
         });
     }
