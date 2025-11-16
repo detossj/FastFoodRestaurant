@@ -11,4 +11,16 @@ class Cart extends Model
         'status',
         'total',
     ];
+
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
+
+    public function orders() {
+        return $this->hasMany(Order::class);
+    }
+
+    public function cartItems() {
+        return $this->hasMany(CartItems::class);
+    }
 }
