@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import LayoutPublic from './layouts/LayoutPublic';
+import Home from './pages/Home';
 
 const App = () => {
   return (
     <Router>
         <Routes>
             <Route path='/' element={<LayoutPublic/>}>
-
+              <Route index element={<Home/>}/>
 
             </Route>
         </Routes>
