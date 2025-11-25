@@ -1,7 +1,7 @@
 import React from 'react'
-import burgerImg from '../../assets/images/burger-potato.jpg';
-import pizzaDrinkImg from '../../assets/images/pizza-drink.jpg';
-import pepperoniImg from '../../assets/images/pizza-peperoni.jpg';
+import burgerImg from '../../assets/images/burger-potato.webp';
+import pizzaDrinkImg from '../../assets/images/pizza-drink.webp';
+import pizzaDrinkGarlicsticksImg from '../../assets/images/pizza-drink-garlicsticks.webp';
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
                     <img src={pizzaDrinkImg} class="d-block w-100" style={{ height: '500px', objectFit: 'cover'}} alt="Pizza con bebida"/>
                     </div>
                     <div class="carousel-item">
-                    <img src={pepperoniImg} class="d-block w-100" style={{ height: '500px', objectFit: 'cover'}} alt="Pizza de pepperoni"/>
+                    <img src={pizzaDrinkGarlicsticksImg} class="d-block w-100" style={{ height: '500px', objectFit: 'cover'}} alt="Pizza de pepperoni"/>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
