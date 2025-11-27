@@ -5,6 +5,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import LayoutPublic from './layouts/LayoutPublic';
 import Home from './pages/Home';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import "../sass/app.scss";
 
 
 const App = () => {
